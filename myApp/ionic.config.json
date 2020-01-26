@@ -1,5 +1,11 @@
 {
   "name": "myApp",
   "integrations": {},
-  "type": "angular"
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/data/ToDos",
+      "proxyUrl": "http://87a509a9.ngrok.io/data/ToDos"
+    }
+  ]
 }

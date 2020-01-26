@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-tab1',
@@ -6,7 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-
-  constructor() {}
-
+  private myToDos: any = [];
+  constructor(private http: HttpClient) {
+    this.http
+      .get(
+        'https://cors-anywhere.herokuapp.com/http://87a509a9.ngrok.io/data/ToDos'
+      )
+      .subscribe(response => {
+        this.myToDos = response;
+      });
+  }
 }
