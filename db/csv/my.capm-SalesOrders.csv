@@ -1,0 +1,6 @@
+id;customer;netAmount;status;creationDate
+1;Bombay Textiles;500;Open;"2019-07-22"
+2;GOI;1500;Open;"2019-07-23"
+3;GOI;1300;Open;"2019-07-24"
+4;GOI;1200;Open;"2019-07-25"
+5;GOI;1750;Open;"2019-07-27"
